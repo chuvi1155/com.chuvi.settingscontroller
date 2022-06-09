@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +11,6 @@ public class SettingsValue : MonoBehaviour
     [SerializeField] TMP_Dropdown dropdown;
     [SerializeField] Toggle valueToggle;
     [SerializeField] TMP_InputField valueInputField;
-
 #if CHUVI_EXTENSIONS
     ISettingsData data;
     System.Type type = null;

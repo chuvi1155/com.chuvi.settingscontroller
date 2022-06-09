@@ -279,6 +279,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 4148026646060519723}
+        m_TargetAssemblyTypeName: SettingsController, Unity.ChuvSettings
+        m_MethodName: Clear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 3584681722372002847}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -560,6 +572,9 @@ MonoBehaviour:
     type: 3}
   parentContainer: {fileID: 6043750947937817885}
   Background: {fileID: 3584681722372002847}
+  groupSprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  closeBtn: {fileID: 3332906837041328608}
+  saveBtn: {fileID: 6270999846827813714}
 --- !u!223 &780612717983901252
 Canvas:
   m_ObjectHideFlags: 0
@@ -680,7 +695,7 @@ MonoBehaviour:
   m_Spacing: 5
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
-  m_ChildControlWidth: 0
+  m_ChildControlWidth: 1
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
@@ -804,7 +819,7 @@ GameObject:
   - component: {fileID: 1160461401670567083}
   - component: {fileID: 6270999846827813714}
   m_Layer: 5
-  m_Name: Button
+  m_Name: SaveButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
