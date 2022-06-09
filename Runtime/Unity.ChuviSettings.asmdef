@@ -1,0 +1,34 @@
+{
+    "name": "Unity.ChuvSettings",
+    "rootNamespace": "",
+    "references": [
+        "GUID:4a8869d5677508446a57b24e9c9068f1",
+        "GUID:f93d5db32282b4f46ae0b20214950bcf",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.chuvi.settingscontroller",
+            "expression": "1.0.0",
+            "define": "CHUVI_SETTINGS"
+        },
+        {
+            "name": "com.chuvi.xmlsystem",
+            "expression": "1.0.0",
+            "define": "XMLSYSTEM"
+        },
+        {
+            "name": "com.chuvi.extensions",
+            "expression": "1.0.0",
+            "define": "CHUVI_EXTENSIONS"
+        }
+    ],
+    "noEngineReferences": false
+}

@@ -1,0 +1,14 @@
+{
+  "name": "com.chuvi.settingscontroller",
+  "displayName": "ChuviSettings",
+  "version": "1.0.0",
+  "unity": "2018.1",
+  "description": "Settings controller for XmlSettings and INISettings",
+  "author": {
+    "name": "Stanislav Blinov and Alena Soldatkina",
+    "email": "chuvi1155@gmail.com",
+    "url": ""
+  },
+  "type": "tool",
+  "hideInEditor": false
+}
