@@ -138,8 +138,9 @@ public class SettingsController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.X) && Input.GetKey(KeyCode.C) && Input.GetKeyDown(KeyCode.V))
         {
-            if (settings is UserINISetting)
+            if (settings is UserINISetting ini)
             {
+                Background.Find<TMPro.TextMeshProUGUI>("MainTitle").text = $"Õ¿—“–Œ… » ({ini.FileName})";
                 Init(settings);
                 Background.SetActive(true);
             }
@@ -147,8 +148,9 @@ public class SettingsController : MonoBehaviour
 #if XMLSYSTEM
         else if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S) && Input.GetKeyDown(KeyCode.D))
         {
-            if (settings is UserXMLSettings)
+            if (settings is UserXMLSettings xml)
             {
+                Background.Find<TMPro.TextMeshProUGUI>("MainTitle").text = $"Õ¿—“–Œ… » ({xml.FileName})";
                 Init(settings);
                 Background.SetActive(true);
             }
