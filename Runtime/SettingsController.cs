@@ -140,7 +140,10 @@ public class SettingsController : MonoBehaviour
         {
             if (settings is UserINISetting ini)
             {
-                Background.Find<TMPro.TextMeshProUGUI>("MainTitle").text = $"Õ¿—“–Œ… » ({ini.FileName})";
+                var title = Background.Find<TMPro.TextMeshProUGUI>("MainTitle");
+                title.text = $"Õ¿—“–Œ… » ({ini.FileName})";
+                title.rectTransform.sizeDelta = new Vector2(460, 50);
+                title.rectTransform.anchorMin = title.rectTransform.anchorMax = new Vector2(0.5f, 1f);
                 Init(settings);
                 Background.SetActive(true);
             }
@@ -150,7 +153,10 @@ public class SettingsController : MonoBehaviour
         {
             if (settings is UserXMLSettings xml)
             {
-                Background.Find<TMPro.TextMeshProUGUI>("MainTitle").text = $"Õ¿—“–Œ… » ({xml.FileName})";
+                var title = Background.Find<TMPro.TextMeshProUGUI>("MainTitle");
+                title.text = $"Õ¿—“–Œ… » ({xml.FileName})";
+                title.rectTransform.sizeDelta = new Vector2(460, 50);
+                title.rectTransform.anchorMin = title.rectTransform.anchorMax = new Vector2(0.5f, 1f);
                 Init(settings);
                 Background.SetActive(true);
             }
