@@ -117,7 +117,7 @@ public class SettingsController : MonoBehaviour
     }
 
     /// <summary>
-    /// √Ö√±√´√® √Ø√Æ√´√• settings √∞√†√¢√•√≠ null
+    /// ≈ÒÎË ÔÓÎÂ settings ‡‚ÂÌ null
     /// </summary>
     public void Clear()
     {
@@ -143,10 +143,9 @@ public class SettingsController : MonoBehaviour
             if (settings is UserINISetting ini)
             {
                 var title = Background.Find<TMPro.TextMeshProUGUI>("MainTitle");
-                title.text = $"√ç√Ä√ë√í√ê√é√â√ä√à ({ini.FileName})";
+                title.text = $"Õ¿—“–Œ… » ({ini.FileName})";
                 title.rectTransform.sizeDelta = new Vector2(460, 50);
                 title.rectTransform.anchorMin = title.rectTransform.anchorMax = new Vector2(0.5f, 1f);
-                title.rectTransform.anchoredPosition = new Vector2(0f, -40f); 
                 Init(settings);
                 Background.SetActive(true);
             }
@@ -157,10 +156,9 @@ public class SettingsController : MonoBehaviour
             if (settings is UserXMLSettings xml)
             {
                 var title = Background.Find<TMPro.TextMeshProUGUI>("MainTitle");
-                title.text = $"√ç√Ä√ë√í√ê√é√â√ä√à ({xml.FileName})";
+                title.text = $"Õ¿—“–Œ… » ({xml.FileName})";
                 title.rectTransform.sizeDelta = new Vector2(460, 50);
                 title.rectTransform.anchorMin = title.rectTransform.anchorMax = new Vector2(0.5f, 1f);
-                title.rectTransform.anchoredPosition = new Vector2(0f, -40f); 
                 Init(settings);
                 Background.SetActive(true);
             }
