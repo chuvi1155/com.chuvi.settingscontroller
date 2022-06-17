@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using XMLSystem.Settings;
+#if XMLSYSTEM
+using XMLSystem.Settings; 
+#endif
 
 public class SettingsController : MonoBehaviour
 
