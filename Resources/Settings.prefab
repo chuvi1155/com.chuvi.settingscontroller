@@ -562,6 +562,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f693084cb530c74784ce076fb7a616c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  settingsValuePref: {fileID: -6972891952696825179, guid: 0ef93e99a39d9f040b03b0adaeba4bc3, type: 3}
+  parentContainer: {fileID: 6043750947937817885}
+  Background: {fileID: 3584681722372002847}
+  groupSprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  closeBtn: {fileID: 3332906837041328608}
+  saveBtn: {fileID: 6270999846827813714}
 --- !u!223 &780612717983901252
 Canvas:
   m_ObjectHideFlags: 0

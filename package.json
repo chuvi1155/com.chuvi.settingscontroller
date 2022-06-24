@@ -1,7 +1,7 @@
 {
   "name": "com.chuvi.settingscontroller",
   "displayName": "ChuviSettings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "unity": "2018.1",
   "description": "Settings controller for XmlSettings and INISettings",
   "author": {
