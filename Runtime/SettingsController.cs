@@ -138,7 +138,11 @@ public class SettingsController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.X) && Input.GetKey(KeyCode.C) && Input.GetKeyDown(KeyCode.V))
+#if ENABLE_LEGACY_INPUT_MANAGER
+        if (Input.GetKey(KeyCode.X) && Input.GetKey(KeyCode.C) && Input.GetKeyDown(KeyCode.V)) 
+#elif ENABLE_INPUT_SYSTEM
+        if(UnityEngine.InputSystem.Keyboard.current.xKey.isPressed && UnityEngine.InputSystem.Keyboard.current.cKey.isPressed && UnityEngine.InputSystem.Keyboard.current.vKey.isPressed)
+#endif
         {
             if (settings is UserINISetting ini)
             {
@@ -151,7 +155,11 @@ public class SettingsController : MonoBehaviour
             }
         }
 #if XMLSYSTEM
-        else if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S) && Input.GetKeyDown(KeyCode.D))
+#if ENABLE_LEGACY_INPUT_MANAGER
+        else if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S) && Input.GetKeyDown(KeyCode.D)) 
+#elif ENABLE_INPUT_SYSTEM
+        else if (UnityEngine.InputSystem.Keyboard.current.aKey.isPressed && UnityEngine.InputSystem.Keyboard.current.sKey.isPressed && UnityEngine.InputSystem.Keyboard.current.dKey.isPressed)
+#endif
         {
             if (settings is UserXMLSettings xml)
             {
